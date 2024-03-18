@@ -57,6 +57,7 @@ delay(5000);
 }
 
 ```
+El funcionamineto de este código se basa
 
 
 
