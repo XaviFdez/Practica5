@@ -5,10 +5,6 @@ En esta práctica nos centraremos en los buses siguientes: *i2c, spi, i2s , usar
 
 ## EJERCICIO 1: ESCÁNER I2C
 
-Programación del código 
-```c++
-
-```
 Código:
 
 ```c++
