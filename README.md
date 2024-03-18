@@ -3,7 +3,7 @@ El funcionamineto de la práctica es trabajar con los buses de comunicación.
 
 En esta práctica nos centraremos en los buses siguientes: *i2c, spi, i2s , usart.*
 
-##EJERCICIO 1: ESCÁNER I2C
+## EJERCICIO 1: ESCÁNER I2C
 
 Programación del código 
 ```c++
