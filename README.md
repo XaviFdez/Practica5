@@ -1,4 +1,6 @@
-# Practica5
+# Práctica 5: BUSES DE COMUNICACIÓN
+
+## Introducción de la práctica
 El funcionamineto de la práctica es trabajar con los buses de comunicación.
 
 En esta práctica nos centraremos en los buses siguientes: *i2c, spi, i2s , usart.*
