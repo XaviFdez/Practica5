@@ -91,6 +91,30 @@ I2C Scanner
 Scanning...
 No I2C devices found
 ```
+Diagrama sobre el funcionamiento:
+```mermaid
+graph TD;
+    A[Inicio] --> B[Inicializar];
+    B --> C[Comenzar escaneo];
+    C --> D[Establecer número de dispositivos encontrados a 0];
+    D --> E[Iterar sobre las direcciones I2C];
+    E --> F{¿Dirección válida?};
+    F -->|Sí| G[Enviar solicitud de transmisión];
+    F -->|No| H[Registrar error desconocido];
+    G --> I{¿Error igual a 0?};
+    I -->|Sí| J[Registrar dispositivo encontrado];
+    I -->|No| K[Registrar error desconocido];
+    K --> E;
+    J --> E;
+    E --> L{¿Se han explorado todas las direcciones?};
+    L -->|No| E;
+    L -->|Sí| M{¿Se encontraron dispositivos?};
+    M -->|Sí| N[Registrar finalización del escaneo];
+    M -->|No| O[Registrar ausencia de dispositivos];
+    O --> N;
+    N --> P[Retraso de 5 segundos];
+    P --> E;
+```
 
 ## EJERCICIO PRÁCTICO 2:
 
