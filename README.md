@@ -55,10 +55,37 @@ delay(5000);
 
 ```
 ### Funcionamiento y salida por la terminal 
-El funcionamineto de este código se basa
+El programa dado, tiene la función de un escáner I2C que busca dispositivos conectados al bus I2C, va recorriendo a través de todas las posibles direcciones en el bus y mira si hay un dispositivo en cada una. Si encuentra un dispositivo, lo muestra en el puerto serie, además proporciona cuantos dispositivos a encontrado.
 
+#### Funciones del código:
+EL código aparte de incluir las 2 bibliotecas : 
+#include <Arduino.h>
+#include <Wire.h>
+
+Tambien incluye de 2 funciones subprograma para hacer la funcionalidad del escáner DEL I2C.
+
+- ##### *Función setup():*
+  Se inicializan las comunicaciones I2C y serie (Serial). El bucle while (!Serial) espera hasta que el puerto serial esté disponible.
+  
+- ##### *Función loop():*
+ En esta funcionalidad se realiza el escaneo del bus I2C. Se itera a través de todas las direcciones de 7 bits posibles (de 1 a 127) y se intenta iniciar una comunicación con cada dirección mediante Wire.beginTransmission(address). Si no hay error (error == 0), significa que hay un dispositivo en esa dirección y se imprime su dirección hexadecimal en el puerto serie. Si hay un error (error == 4), se imprime un mensaje indicando que hubo un error desconocido.
+Después de escanear todas las direcciones, se verifica si se encontraron dispositivos. Si no encuentra ningun dispositivo, se imprime un mensaje diciendolo. Luego, se espera 5 segundos antes de comenzar el próximo escaneo.
+  
 #### Salida por el puerto serie:
+
+En el caso que encuentre dispositivos conectados mostrará por pantalla:
 ```
+I2C Scanner
+Scanning...
+I2C device found at address 0x3F !
+I2C device found at address 0x68 !
+done
+```
+Y si no se encuentran dispositivos conectados en el bus I2C:
+```
+I2C Scanner
+Scanning...
+No I2C devices found
 ```
 
 ## EJERCICIO PRÁCTICO 2:
