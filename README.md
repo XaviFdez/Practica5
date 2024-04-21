@@ -59,7 +59,12 @@ delay(5000);
 }
 
 ```
+### Funcionamiento y salida por la terminal 
 El funcionamineto de este código se basa
+
+## EJERCICIO PRÁCTICO 2:
+
+### Funcionamiento y salida por la terminal 
 
 
 
