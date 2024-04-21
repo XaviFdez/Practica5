@@ -17,7 +17,6 @@ void setup()
 Wire.begin();
 Serial.begin(115200);
 while (!Serial);
-// Leonardo: wait for serial monitor
 Serial.println("\nI2C Scanner");
 }
 void loop()
@@ -28,9 +27,6 @@ Serial.println("Scanning...");
 nDevices = 0;
 for(address = 1; address < 127; address++ )
 {
-// The i2c_scanner uses the return value of
-// the Write.endTransmisstion to see if
-// a device did acknowledge to the address.
 Wire.beginTransmission(address);
 error = Wire.endTransmission();
 if (error == 0)
@@ -55,16 +51,21 @@ Serial.println("No I2C devices found\n");
 else
 Serial.println("done\n");
 delay(5000);
-// wait 5 seconds for next scan
 }
 
 ```
 ### Funcionamiento y salida por la terminal 
 El funcionamineto de este código se basa
 
+#### Salida por el puerto serie:
+```
+```
+
 ## EJERCICIO PRÁCTICO 2:
 
 ### Funcionamiento y salida por la terminal 
 
-
+#### Salida por el puerto serie:
+```
+```
 
