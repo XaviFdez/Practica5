@@ -75,7 +75,7 @@ Tambien incluye de 2 funciones subprograma para hacer la funcionalidad del escá
  Si hay un error (error == 4), se imprime un mensaje indicando que hubo un error desconocido.
 Después de escanear todas las direcciones, se verifica si se encontraron dispositivos. Si no encuentra ningun dispositivo, se imprime un mensaje diciendolo. Luego, se espera 5 segundos antes de comenzar el próximo escaneo.
   
-#### Salida por el puerto serie:
+### Salida por el puerto serie:
 
 En el caso que encuentre dispositivos conectados mostrará por pantalla:
 ```
@@ -96,7 +96,7 @@ No I2C devices found
 
 ### Funcionamiento y salida por la terminal 
 
-#### Salida por el puerto serie:
+### Salida por el puerto serie:
 ```
 ```
 
