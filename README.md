@@ -3,7 +3,7 @@
 ## Introducción de la práctica
 El funcionamineto de la práctica es trabajar con los buses de comunicación.
 
-En esta práctica nos centraremos en los buses siguientes: *i2c, spi, i2s , usart.*
+En esta práctica nos centraremos en el bus I2C , donde trabajaremos con el especializándonos en el Escáner del bus de comunicación I2C.
 
 ## EJERCICIO 1: ESCÁNER I2C
 
