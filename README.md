@@ -124,3 +124,4 @@ graph TD;
 ```
 ```
 
+### Fotografías de la práctica
