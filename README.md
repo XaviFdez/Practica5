@@ -118,7 +118,7 @@ graph TD;
 
 ## EJERCICIO PRÁCTICO 2: SENSOR TEMPERATURA Y HUMEDAD
 
-```
+```c++
 #include <Arduino.h>
     #include <Wire.h>
     #include <AHT10.h>
@@ -178,8 +178,14 @@ En el loop(), se lee la temperatura y la humedad cada 2 segundos, se imprimen es
 
 ### Salida por el puerto serie:
 
-```
+La salida son la temperatura y humedad captada.
 
+En nuestro caso la salida por el puerto serie:
+
+```
+Temperatura: 22.99 °C   Humedad: 55.91%
+Temperatura: 22.99 °C   Humedad: 55.83%
+Temperatura: 22.99 °C   Humedad: 55.78%
 ```
 
 ### Fotografías de la práctica
