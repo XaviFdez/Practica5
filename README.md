@@ -189,3 +189,4 @@ Temperatura: 22.99 °C   Humedad: 55.78%
 ```
 
 ### Fotografías de la práctica
+![Fotografia Montaje](https://github.com/XaviFdez/Practica5/assets/160432677/c8eccce3-6546-4a63-b30f-61491ef1ed93)
