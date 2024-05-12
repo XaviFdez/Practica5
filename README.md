@@ -70,9 +70,9 @@ Tambien incluye de 2 funciones subprograma para hacer la funcionalidad del escá
 - ##### *Función loop():*
  En esta funcionalidad se realiza el escaneo del bus I2C. Se itera a través de todas las direcciones de 7 bits posibles (de 1 a 127) y se intenta iniciar una comunicación con cada dirección mediante Wire.beginTransmission(address). 
  
- Si no hay error (error == 0), significa que hay un dispositivo en esa dirección y se imprime su dirección hexadecimal en el puerto serie. 
+ Si no hay error (error == 4), significa que hay un dispositivo en esa dirección y se imprime su dirección hexadecimal en el puerto serie. 
  
- Si hay un error (error == 4), se imprime un mensaje indicando que hubo un error desconocido.
+ Si hay un error (error == 0), se imprime un mensaje indicando que hubo un error desconocido.
 Después de escanear todas las direcciones, se verifica si se encontraron dispositivos. Si no encuentra ningun dispositivo, se imprime un mensaje diciendolo. Luego, se espera 5 segundos antes de comenzar el próximo escaneo.
   
 ### Salida por el puerto serie:
